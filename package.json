@@ -1,0 +1,34 @@
+{
+  "name": "react-native-ios-orientation-support",
+  "version": "1.0.0",
+  "description": "React Native plugin to manage supported orientations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url":
+      "git+https://github.com/rhdeck/react-native-ios-orientation-support.git"
+  },
+  "keywords": ["react-native", "ios"],
+  "author": "Ray Deck",
+  "license": "MIT",
+  "bugs": {
+    "url":
+      "https://github.com/rhdeck/react-native-ios-orientation-support/issues"
+  },
+  "homepage":
+    "https://github.com/rhdeck/react-native-ios-orientation-support#readme",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "plist": "^3.0.1"
+  },
+  "rnpm": {
+    "plugin": "bin/plugin.js",
+    "commands": {
+      "prelink": "./node_modules/.bin/react-native-ios-orientation-support"
+    }
+  },
+  "bin": { "react-native-ios-orientation-support": "bin/cli.js" }
+}
